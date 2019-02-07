@@ -1100,6 +1100,8 @@
 			}
 
 			var ret = this.Api.onKeyPress(e);
+			if (window.g_asc_plugins)
+				window.g_asc_plugins.onPluginEvent("onInputSymbolCheck", c);
 
 			switch (e.which)
 			{
