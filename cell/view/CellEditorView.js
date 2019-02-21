@@ -406,9 +406,6 @@
 	};
 
 	CellEditor.prototype.setTextStyle = function (prop, val) {
-		if (this.isFormula()) {
-			return;
-		}
 		var t = this, opt = t.options, begin, end, i, first, last;
 
 		if (t.selectionBegin !== t.selectionEnd) {
